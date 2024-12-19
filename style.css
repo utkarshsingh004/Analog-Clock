@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* CSS code for Header */
+header{
+    text-align: center;
+}
+h1{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: coral;
+}
+
+/* CSS code for main */
+.clockImageContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    /* border: 2px solid black; */
+    padding-top: 100px;
+}
+.clockImage{
+    width: 400px;
+    height: 400px;
+}
+#hourHand, #minuteHand, #secondHand{
+    position: absolute;
+    border-radius: 10px;
+    /* background: black; */
+    transform-origin: bottom; /*By using this tag, We can rotate the clock hands according to our required position. */
+}
+#hourHand{
+    width: 0.55%;
+    height: 19%;
+    top: 40%;
+    opacity: 0.8;
+    transform-origin: bottom;
+    background: darkgreen;
+    /* display: none; */
+}
+#minuteHand{
+    width: 0.45%;
+    height: 28%;
+    top: 32%;
+    opacity: 0.8;
+    transform-origin: bottom;
+    background: red;
+    /* display: none; */
+}
+#secondHand{
+    width: 0.25%;
+    height: 30%;
+    top: 30%;
+    transform-origin: bottom;
+    /* display: none; */
+}
